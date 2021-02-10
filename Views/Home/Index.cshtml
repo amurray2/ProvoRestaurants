@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+@model IEnumerable<string>
+@*Index page*@
+<ul class="list-group">
+    <li class="list-group-item active">Top 5 Restaurants</li>
+    @foreach (string r in Model)
+    {
+        <li class="list-group-item">@r</li>
+    }
+</ul>

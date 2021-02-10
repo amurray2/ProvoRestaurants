@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Suggestions";
+}
+@*List of user suggestions*@
+@foreach (ProvoRestaurants.Models.Suggestions r in Model)
+{
+    <ul class="list-group">
+        <li class="list-group-item active">@r.Name <span style="font-style:italic">Suggested</span></li>
+        <li class="list-group-item">@r.RestaurantName</li>
+        <li class="list-group-item">@r.FavoriteDish</li>
+        <li class="list-group-item">@r.Phone</li>
+        
+    </ul>
+    <br />
+}
